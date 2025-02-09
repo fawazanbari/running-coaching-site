@@ -12,10 +12,11 @@
             background-color: #f8f8f8;
         }
         header {
-            background-color: #333;
+            background: url('logo.png') no-repeat center center;
+            background-size: contain;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 80px;
         }
         nav {
             text-align: center;
@@ -46,6 +47,16 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
         }
+        .service-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .service-card a {
+            display: block;
+            text-decoration: none;
+            color: #ff5722;
+            margin-top: 10px;
+        }
         .cta-button {
             display: inline-block;
             padding: 10px 20px;
@@ -63,32 +74,6 @@
             color: white;
             margin-top: 20px;
         }
-        .form-container {
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-            width: 50%;
-            margin: 20px auto;
-            text-align: center;
-        }
-        input, textarea {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .submit-button {
-            background-color: #ff5722;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 18px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
     </style>
 </head>
 <body>
@@ -97,60 +82,42 @@
         <p>Your Path to Running Excellence</p>
     </header>
     <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
     </nav>
-    <div class="container">
-        <h2 id="about">About Us</h2>
-        <p>We help runners of all levels achieve their goals, whether it's improving speed, endurance, or running for fitness.</p>
-    </div>
     <div class="container">
         <h2 id="services">Our Services</h2>
         <div class="services">
             <div class="service-card">
+                <img src="one-on-one.jpg" alt="One-on-One Coaching">
                 <h3>One-on-One Coaching</h3>
-                <p>Personalized training plans tailored to your goals.</p>
+                <p>Personalized training plans tailored to your goals. Improve endurance, speed, and race strategy with expert guidance.</p>
+                <a href="one-on-one.html">Learn More</a>
             </div>
             <div class="service-card">
+                <img src="group-training.jpg" alt="Group Training">
                 <h3>Group Training</h3>
-                <p>Join a community of runners for structured workouts.</p>
+                <p>Join a community of runners for structured workouts. Experience the motivation and accountability of training with others.</p>
+                <a href="group-training.html">Learn More</a>
             </div>
             <div class="service-card">
+                <img src="weight-loss.jpg" alt="Weight Loss Running Program">
                 <h3>Weight Loss Running Program</h3>
-                <p>Transform your fitness with our guided running plans.</p>
+                <p>Transform your fitness with our guided running plans. Burn calories, improve stamina, and achieve sustainable weight loss.</p>
+                <a href="weight-loss.html">Learn More</a>
             </div>
             <div class="service-card">
+                <img src="online-coaching.jpg" alt="Online Coaching">
                 <h3>Online Coaching</h3>
-                <p>Access expert training plans and virtual coaching sessions.</p>
+                <p>Access expert training plans and virtual coaching sessions. Get personalized feedback and training adjustments remotely.</p>
+                <a href="online-coaching.html">Learn More</a>
             </div>
         </div>
-        <a href="#contact" class="cta-button">Get Started</a>
-    </div>
-    <div class="container" id="testimonials">
-        <h2>Testimonials</h2>
-        <p>"Elite Stride transformed my running performance! Highly recommend!" - Sarah M.</p>
-        <p>"The weight loss program was life-changing. I lost 20 pounds while enjoying running!" - John D.</p>
-    </div>
-    <div class="container" id="blog">
-        <h2>Blog</h2>
-        <p>Coming soon! Stay tuned for running tips, training strategies, and success stories.</p>
-    </div>
-    <div class="container">
-        <h2 id="contact">Contact Us</h2>
-        <p>Email: info@elitestriderunning.com</p>
-        <p>Phone: (630) 666-0200</p>
-        <div class="form-container">
-            <h3>Sign Up for Coaching</h3>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit" class="submit-button">Submit</button>
-            </form>
-        </div>
+        <a href="contact.html" class="cta-button">Get Started</a>
     </div>
     <footer>
         <p>&copy; 2025 Elite Stride Running Academy. All rights reserved.</p>
